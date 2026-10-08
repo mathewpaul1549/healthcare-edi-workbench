@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Add a member",
+    "expected": "add"
+  },
+  {
+    "text": "Enroll the subscriber",
+    "expected": "add"
+  },
+  {
+    "text": "Register new coverage",
+    "expected": "add"
+  },
+  {
+    "text": "Terminate coverage",
+    "expected": "terminate"
+  },
+  {
+    "text": "Cancel the policy",
+    "expected": "terminate"
+  },
+  {
+    "text": "Remove member",
+    "expected": "terminate"
+  },
+  {
+    "text": "Change the address",
+    "expected": "change"
+  },
+  {
+    "text": "Update the contact",
+    "expected": "change"
+  },
+  {
+    "text": "Correct a record",
+    "expected": "change"
+  },
+  {
+    "text": "Reinstate coverage",
+    "expected": "reinstate"
+  },
+  {
+    "text": "Restore the policy",
+    "expected": "reinstate"
+  },
+  {
+    "text": "Reactivate enrollment",
+    "expected": "reinstate"
+  },
+  {
+    "text": "Do not terminate coverage",
+    "expected": "review"
+  },
+  {
+    "text": "Add or cancel this member",
+    "expected": "review"
+  },
+  {
+    "text": "What is the status?",
+    "expected": "review"
+  },
+  {
+    "text": "Never remove this record",
+    "expected": "review"
+  },
+  {
+    "text": "Please process the transaction",
+    "expected": "review"
+  },
+  {
+    "text": "Do not add coverage",
+    "expected": "review"
+  }
+]

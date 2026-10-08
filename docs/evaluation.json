@@ -1,0 +1,175 @@
+{
+  "run_utc": "2026-10-08T12:08:55.232421+00:00",
+  "python": "3.14.6",
+  "dataset": "18 authored keyword intent examples + 6 seeded parser cases; no held-out or production data",
+  "intent_accuracy": 1.0,
+  "intent_cases": [
+    {
+      "text": "Add a member",
+      "expected": "add",
+      "actual": "add",
+      "correct": true
+    },
+    {
+      "text": "Enroll the subscriber",
+      "expected": "add",
+      "actual": "add",
+      "correct": true
+    },
+    {
+      "text": "Register new coverage",
+      "expected": "add",
+      "actual": "add",
+      "correct": true
+    },
+    {
+      "text": "Terminate coverage",
+      "expected": "terminate",
+      "actual": "terminate",
+      "correct": true
+    },
+    {
+      "text": "Cancel the policy",
+      "expected": "terminate",
+      "actual": "terminate",
+      "correct": true
+    },
+    {
+      "text": "Remove member",
+      "expected": "terminate",
+      "actual": "terminate",
+      "correct": true
+    },
+    {
+      "text": "Change the address",
+      "expected": "change",
+      "actual": "change",
+      "correct": true
+    },
+    {
+      "text": "Update the contact",
+      "expected": "change",
+      "actual": "change",
+      "correct": true
+    },
+    {
+      "text": "Correct a record",
+      "expected": "change",
+      "actual": "change",
+      "correct": true
+    },
+    {
+      "text": "Reinstate coverage",
+      "expected": "reinstate",
+      "actual": "reinstate",
+      "correct": true
+    },
+    {
+      "text": "Restore the policy",
+      "expected": "reinstate",
+      "actual": "reinstate",
+      "correct": true
+    },
+    {
+      "text": "Reactivate enrollment",
+      "expected": "reinstate",
+      "actual": "reinstate",
+      "correct": true
+    },
+    {
+      "text": "Do not terminate coverage",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    },
+    {
+      "text": "Add or cancel this member",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    },
+    {
+      "text": "What is the status?",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    },
+    {
+      "text": "Never remove this record",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    },
+    {
+      "text": "Please process the transaction",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    },
+    {
+      "text": "Do not add coverage",
+      "expected": "review",
+      "actual": "review",
+      "correct": true
+    }
+  ],
+  "parser_cases": [
+    {
+      "case": "valid",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "case": "invalid calendar date",
+      "expected": [
+        "INVALID_DATE",
+        "MISSING_BEGIN"
+      ],
+      "actual": [
+        "INVALID_DATE",
+        "MISSING_BEGIN"
+      ]
+    },
+    {
+      "case": "missing ID",
+      "expected": [
+        "MISSING_MEMBER_ID"
+      ],
+      "actual": [
+        "MISSING_MEMBER_ID"
+      ]
+    },
+    {
+      "case": "wrong count",
+      "expected": [
+        "SEGMENT_COUNT"
+      ],
+      "actual": [
+        "SEGMENT_COUNT"
+      ]
+    },
+    {
+      "case": "control mismatch",
+      "expected": [
+        "CONTROL_NUMBER"
+      ],
+      "actual": [
+        "CONTROL_NUMBER"
+      ]
+    },
+    {
+      "case": "missing start date",
+      "expected": [
+        "MISSING_BEGIN"
+      ],
+      "actual": [
+        "MISSING_BEGIN"
+      ]
+    }
+  ],
+  "rule_true_positives": 6,
+  "rule_false_positives": 0,
+  "rule_false_negatives": 0,
+  "intent_p50_ms": 0.004,
+  "limitations": "Small synthetic regression set. Keyword baseline, not a trained NLP model or full X12 validator."
+}
